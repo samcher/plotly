@@ -1,0 +1,22 @@
+---
+title: "plotly"
+author: "DC"
+date: "February 5, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document with a plotly plot.
+
+```{r echo=FALSE,warning=FALSE, message=FALSE} 
+library(plotly)
+p <- plot_ly(data = iris, x=~Species, y = ~Sepal.Length, type = 'bar', name = 'Species')
+p
+
+```
+
